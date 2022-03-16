@@ -95,5 +95,8 @@ addBtn.addEventListener('click', addNewTodos);
 // remove all display list and localStorage item
 resetBtn.addEventListener('click', () => {
 	localStorage.clear();
-	todoUI.removeChild(li);
+	while (todoUI.hasChildNodes()) {
+		todoUI.removeChild(todoUI.firstChild);
+	}
+	// console.log(todoUI.firstChild);
 });
