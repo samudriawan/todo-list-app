@@ -2,6 +2,8 @@
 
 Todo List Web Application using Javascript with localStorage.
 
+update: add React.js version (switch to React-js branch to view the code)
+
 ## Overview
 
 ### Screenshot
