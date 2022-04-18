@@ -1,13 +1,12 @@
 # Todo List
 
-Todo List Web Application using Javascript with localStorage.
+Todo List Web Application using React.js with localStorage.
 
 ## Overview
 
 ### Screenshot
 
-![Preview Screenshot](images/Screenshot-fills.png)
-![Preview Screenshot](images/Screenshot-empty.png)
+![Preview Screenshot](images/screenshot-react.png)
 
 ## My process
 
@@ -18,14 +17,14 @@ Todo List Web Application using Javascript with localStorage.
 - Flexbox and Grid
 - Mobile-first Responsive Design
 - Bootstrap
-- Javascript
+- React.js
 - [SASS](https://sass-lang.com/)
 
 ### What I learned
 
-- localStorage.setItem()
-- localStorage.getItem()
-- appenChild
+- useState
+- props
+- Lifting up state
 
 ## Contact
 
