@@ -1,0 +1,44 @@
+@use './variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Shadows+Into+Light&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+body {
+	min-height: 100%;
+	margin-inline: auto;
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	background-color: $primary-color-light;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	::before,
+	::after {
+		animation-delay: -1ms !important;
+		animation-duration: 1ms !important;
+		animation-iteration-count: 1 !important;
+		background-attachment: initial !important;
+		scroll-behavior: auto !important;
+		transition-duration: 0s !important;
+		transition-delay: 0s !important;
+	}
+}
