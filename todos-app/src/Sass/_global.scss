@@ -29,6 +29,10 @@ body {
 	background-color: $primary-color-light;
 }
 
+input {
+	font-family: inherit;
+}
+
 @media (prefers-reduced-motion: reduce) {
 	*,
 	::before,

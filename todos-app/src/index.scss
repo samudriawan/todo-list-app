@@ -1,0 +1,99 @@
+@use './Sass/global' as *;
+@use './Sass/variables' as *;
+
+// wrapper
+.wrapper {
+	width: 90%;
+	margin-inline: auto;
+}
+@media screen and (min-width: 768px) {
+	.wrapper {
+		width: 700px;
+	}
+}
+
+// header
+.header {
+	color: white;
+	background-color: $primary-color-dark;
+	z-index: 1;
+
+	h1 {
+		font-weight: 600;
+	}
+
+	.circle {
+		width: 300px;
+		height: 200px;
+		border-radius: 50%;
+		background-color: $primary-color;
+		transform: translate(9rem, -9rem);
+		z-index: -1;
+	}
+}
+
+.list-heading {
+	font-family: 'Shadows Into Light', cursive;
+}
+.todo-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid $primary-color-dark;
+}
+
+.remove,
+.done {
+	position: absolute;
+	top: 30%;
+}
+.done {
+	right: 3.9rem;
+}
+
+.remove {
+	right: 0.3rem;
+}
+
+.task-list {
+	margin-left: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.2em;
+
+	p,
+	span {
+		margin-bottom: 0;
+	}
+	p {
+		font-weight: 600;
+		letter-spacing: 0.03em;
+	}
+	span {
+		font-weight: 400;
+		font-size: 0.7em;
+		font-style: italic;
+	}
+}
+
+.trash-icons,
+.check-icons,
+.redo-icons {
+	margin-right: 0.5em;
+	cursor: pointer;
+}
+.trash-icons {
+	&:hover {
+		color: red;
+	}
+}
+.check-icons,
+.redo-icons {
+	margin-inline: 1em;
+}
+
+.check-icons:hover {
+	color: green;
+}
+.redo-icons:hover {
+	color: blue;
+}
